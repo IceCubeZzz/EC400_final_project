@@ -1,4 +1,4 @@
-# implemented the great DQQN code on pytorch. see https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html , and 
+# implemented the great DDQN code from the pytorch DDQN tutorial. see https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html , and 
 # https://github.com/pytorch/tutorials/blob/master/intermediate_source/mario_rl_tutorial.py
 
 import torch
