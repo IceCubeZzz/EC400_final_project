@@ -9,7 +9,7 @@ __pycache__/
 *.DS_Store
 
 drive_data
-
+*saved_checkpoints
 env
 
 # Distribution / packaging
