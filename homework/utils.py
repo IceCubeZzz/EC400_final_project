@@ -237,7 +237,7 @@ if __name__ == '__main__':
         logger = Logger(save_dir)
 
         while n < args.steps_per_track:
-            steps, how_far, exploration_rate, curr_step = pytux.rollout(track, ddqn_control, logger, max_frames=1000, verbose=args.verbose)
+            steps, how_far, exploration_rate, curr_step = pytux.rollout(track, ddqn_control, logger, max_frames=10000, verbose=args.verbose)
             print(steps, how_far)
 
             logger.log_episode()

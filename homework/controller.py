@@ -94,7 +94,7 @@ def control(aim_point, current_vel, last_rescue, track, action_num):
 
     # we dont like rescue
     if action.rescue:
-        reward -= 100
+        reward -= 1000
         # print("rescue on. -10000 rewards")
 
     # round up to 2nd decimal places, then if 0, reward
