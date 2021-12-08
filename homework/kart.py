@@ -54,7 +54,7 @@ class Kart:
         self.exploration_rate_min = 0.1
         self.curr_step = 0
 
-        self.save_every = 5e5 
+        self.save_every = 4e2
 
 
     def act(self, state):
@@ -165,7 +165,7 @@ class Kart(Kart):
 class Kart(Kart):
     def save(self):
         save_path = (
-            self.save_dir / f"mario_net_{int(self.curr_step // self.save_every)}.chkpt"
+            f"{self.save_dir}/controllernet{int(self.curr_step // self.save_every)}.chkpt"
         )
         torch.save(
             dict(model=self.net.state_dict(), exploration_rate=self.exploration_rate),
